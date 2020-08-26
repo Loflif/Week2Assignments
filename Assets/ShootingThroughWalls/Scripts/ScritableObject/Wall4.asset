@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8953aa9b297885d4a8575b537c85ed38, type: 3}
+  m_Name: Wall4
+  m_EditorClassIdentifier: 
+  MaxHealth: 4
+  HitSound: {fileID: 8300000, guid: f016af4047be8a94ebf3076b59d69daa, type: 3}
