@@ -19,8 +19,20 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_2773512:
+        m_Texture: {fileID: 2800000, guid: 3188cd8a1e52e084da55c8500c5fc3ea, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_40E6145A:
+        m_Texture: {fileID: 2800000, guid: 5b21fffa76a19b54081804a25a6c9d9c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - Texture2D_85D512A6:
-        m_Texture: {fileID: 2800000, guid: dc6ae2a8d11ee184daa5985889f26110, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0b201d09e6e650d4086c171244d5a57b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_A3BA363F:
+        m_Texture: {fileID: 2800000, guid: e2ef29bd26da9c444bd35e29034ec0ff, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -47,14 +59,27 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_49691538_Texture_1:
+        m_Texture: {fileID: 2800000, guid: e2ef29bd26da9c444bd35e29034ec0ff, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_62E998B_Texture_1:
+        m_Texture: {fileID: 2800000, guid: e2ef29bd26da9c444bd35e29034ec0ff, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_7885FD51_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 5b21fffa76a19b54081804a25a6c9d9c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_34745F5E: 0.2
-    - Vector1_AA094F39: 25.74
-    - Vector1_DC419A40: 0.81
+    - Vector1_34745F5E: 0.27
+    - Vector1_413E1A83: 0.45
+    - Vector1_AA094F39: 16.18
+    - Vector1_DC419A40: 0.73
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -78,8 +103,8 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - Color_DAE15D3F: {r: 1, g: 1, b: 1, a: 0}
-    - Vector2_1227BFAD: {r: -1.02, g: 0, b: 0, a: 0}
-    - Vector2_B47CF28D: {r: -5.95, g: 0, b: 0, a: 0}
+    - Vector2_1227BFAD: {r: 2, g: 0, b: 0, a: 0}
+    - Vector2_B47CF28D: {r: 4, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

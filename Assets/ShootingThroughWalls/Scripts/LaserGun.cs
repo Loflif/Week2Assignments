@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections;
 using UnityEngine;
 
 public class LaserGun : MonoBehaviour
@@ -31,8 +30,17 @@ public class LaserGun : MonoBehaviour
                 break;
             }
         }
+        StartCoroutine(LaserBeamParticlePlay());
         DebugDrawLaser(lastWallHit);
-        // LaserBeam.
+    }
+
+    IEnumerator LaserBeamParticlePlay()
+    {
+        yield return new WaitForSeconds(0.1f);
+        LaserBeam.Play(true);
+        yield return new WaitForSeconds(0.5f);
+        LaserBeam.Stop(true, ParticleSystemStopBehavior.StopEmitting);
+        yield return null;
     }
 
     private void DebugDrawLaser(Vector3 pDestination)

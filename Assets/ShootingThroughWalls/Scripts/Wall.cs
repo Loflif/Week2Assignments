@@ -9,6 +9,8 @@ public class Wall : MonoBehaviour
     private AudioSource Source = null;
     private MeshRenderer Mesh = null;
     private Collider Collider = null;
+    private ParticleSystem HitParticles = null;
+    public GameObject DestroyedMesh = null;
 
     private void Awake()
     {
@@ -20,11 +22,14 @@ public class Wall : MonoBehaviour
         Mesh = GetComponent<MeshRenderer>();
         Collider = GetComponent<Collider>();
         Source = GetComponent<AudioSource>();
+        HitParticles = GetComponentInChildren<ParticleSystem>();
         CurrentHealth = Data.MaxHealth;
     }
 
     public void TakeDamage(ref float pDamage)
     {
+        HitParticles.Play();
+
         float remainingShotDamage = pDamage;
         remainingShotDamage -= CurrentHealth;
         CurrentHealth -= pDamage;
@@ -43,6 +48,7 @@ public class Wall : MonoBehaviour
         const float DEATH_DELAY = 1.5f;
         
         Mesh.enabled = false;
+        DestroyedMesh.SetActive(true);
         Collider.enabled = false;
         Destroy(gameObject, DEATH_DELAY);
         this.enabled = false;
